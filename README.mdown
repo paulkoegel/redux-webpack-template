@@ -10,3 +10,4 @@ You don't need to run any of these anymore, but this is a log of the commands I 
 + `npm install -g webpack`
 + `npm install babel --save`
 + `npm install react --save`
++ `npm install --save-dev webpack`
