@@ -1,0 +1,12 @@
+# Redux Webpack Template
+
+### Set up instructions
+`npm install`
+
+### Setup Command Archive
+You don't need to run any of these anymore, but this is a log of the commands I ran to arrive at the repository's current state:
+
++ `npm init`
++ `npm install -g webpack`
++ `npm install babel --save`
++ `npm install react --save`
