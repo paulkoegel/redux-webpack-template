@@ -6,6 +6,8 @@
 ### Setup Command Archive
 You don't need to run any of these anymore, but this is a log of the commands I ran to arrive at the repository's current state:
 
+#### Webpack Setup
+Cf. this [tutorial](http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln) and its [example repository](https://github.com/nilshartmann/react-webpack-example).
 + `npm init`
 + `npm install -g webpack`
 + `npm install babel --save`
@@ -13,3 +15,8 @@ You don't need to run any of these anymore, but this is a log of the commands I 
 + `npm install --save-dev webpack`
 + `npm install --save-dev babel-loader url-loader style-loader css-loader json-loader`
 + `npm install --save-dev webpack-dev-server react-hot-loader`
+
+#### Redux Setup
++ `npm install --save redux`
++ `npm install --save react-redux`
++ `npm install --save-dev redux-devtools`
