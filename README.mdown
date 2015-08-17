@@ -20,3 +20,5 @@ Cf. this [tutorial](http://reactjs.de/posts/react-anwendungen-mit-webpack-entwic
 + `npm install --save redux`
 + `npm install --save react-redux`
 + `npm install --save-dev redux-devtools`
+
++ `npm install --save redux-thunk`

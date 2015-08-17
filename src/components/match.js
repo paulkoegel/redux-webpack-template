@@ -3,7 +3,7 @@ import React from 'react';
 export default React.createClass({
   render: function() {
     return(
-      <div class='match'>
+      <div className='match'>
         <h2>Match</h2>
       </div>
     );
