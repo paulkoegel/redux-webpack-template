@@ -5,13 +5,28 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  entry:  [
-    path.resolve(__dirname, 'src/app.js')
+  entry: [
+    'webpack-dev-server/client?http://localhost:8080',
+    'webpack/hot/dev-server',
+    path.resolve(__dirname, 'src/main.js')
   ],
   output: {
     path: path.resolve(__dirname, 'public/dist'),
-    filename: 'app.js',
-    publicPath: 'dist/'
+    publicPath: 'dist/',
+    filename: 'main.js'
   },
+  module: {
+    loaders: [
+      // { test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel?optional[]=es7.functionBind'] },
+      { test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel'] },
+      { test: /\.css$/, loader: 'style!css' },
+      { test: /\.(png|jpg)$/, loader: 'url?limit=25000' },
+      { test: /\.json$/, loader: 'json-loader' }
+    ]
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
   devtool: 'source-map'
-}
+};

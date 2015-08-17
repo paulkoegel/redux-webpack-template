@@ -12,3 +12,4 @@ You don't need to run any of these anymore, but this is a log of the commands I 
 + `npm install react --save`
 + `npm install --save-dev webpack`
 + `npm install --save-dev babel-loader url-loader style-loader css-loader json-loader`
++ `npm install --save-dev webpack-dev-server react-hot-loader`
